@@ -1,0 +1,15 @@
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\bin\Debug\net7.0\RTech.CryptoCoin.Domain.deps.json
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\bin\Debug\net7.0\RTech.CryptoCoin.Domain.dll
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\bin\Debug\net7.0\RTech.CryptoCoin.Domain.pdb
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\bin\Debug\net7.0\RTech.CryptoCoin.Data.dll
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\bin\Debug\net7.0\RTech.CryptoCoin.Data.pdb
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\RTech.CryptoCoin.Domain.csproj.AssemblyReference.cache
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\RTech.CryptoCoin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\RTech.CryptoCoin.Domain.AssemblyInfoInputs.cache
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\RTech.CryptoCoin.Domain.AssemblyInfo.cs
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\RTech.CryptoCoin.Domain.csproj.CoreCompileInputs.cache
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\RTech.CryptoCoin.Domain.csproj.CopyComplete
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\RTech.CryptoCoin.Domain.dll
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\refint\RTech.CryptoCoin.Domain.dll
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\RTech.CryptoCoin.Domain.pdb
+C:\Users\faruk\source\repos\RTech.Crypto\RTech.CryptoCoin.Domain\obj\Debug\net7.0\ref\RTech.CryptoCoin.Domain.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RTech.CryptoCoin.Web.props" />
+</Project>

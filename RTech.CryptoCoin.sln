@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTech.CryptoCoin.Web", "RTech.CryptoCoin.Web\RTech.CryptoCoin.Web.csproj", "{DB38F8ED-2727-499B-9548-659AB5456DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTech.CryptoCoin.Domain", "RTech.CryptoCoin.Domain\RTech.CryptoCoin.Domain.csproj", "{D4669CE7-0DF9-469C-9B66-3208657CAEBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTech.CryptoCoin.EntityFrameworkCore", "RTech.CryptoCoin.EntityFrameworkCore\RTech.CryptoCoin.EntityFrameworkCore.csproj", "{01D4A40F-BBFE-47EF-9EF4-7EE18B50D30C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTech.CryptoCoin.Data", "RTech.CryptoCoin.Data\RTech.CryptoCoin.Data.csproj", "{E5B6BD04-826F-43A8-9AA6-97DCA8A113F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB38F8ED-2727-499B-9548-659AB5456DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB38F8ED-2727-499B-9548-659AB5456DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB38F8ED-2727-499B-9548-659AB5456DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB38F8ED-2727-499B-9548-659AB5456DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4669CE7-0DF9-469C-9B66-3208657CAEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4669CE7-0DF9-469C-9B66-3208657CAEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4669CE7-0DF9-469C-9B66-3208657CAEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4669CE7-0DF9-469C-9B66-3208657CAEBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D4A40F-BBFE-47EF-9EF4-7EE18B50D30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D4A40F-BBFE-47EF-9EF4-7EE18B50D30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D4A40F-BBFE-47EF-9EF4-7EE18B50D30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D4A40F-BBFE-47EF-9EF4-7EE18B50D30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B6BD04-826F-43A8-9AA6-97DCA8A113F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B6BD04-826F-43A8-9AA6-97DCA8A113F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B6BD04-826F-43A8-9AA6-97DCA8A113F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B6BD04-826F-43A8-9AA6-97DCA8A113F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8FF4E3D-D6A7-43D1-911C-1D2D59787C2B}
+	EndGlobalSection
+EndGlobal

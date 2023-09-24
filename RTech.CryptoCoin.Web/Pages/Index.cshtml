@@ -1,0 +1,95 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <button id="btn-fetch-daily" class="btn btn-light">Günlük</button>
+    <button id="btn-fetch-month" class="btn btn-light">Aylık</button>
+    <button id="btn-fetch-year" class="btn btn-light">Yıllık</button>
+</div>
+<div id="loading" style="width:600px"></div>
+<canvas id="coinChart" style="width:100%;max-width:600px"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    
+    var selectedTimeFilter = 'd';
+
+    $(document).ready(function () {
+        
+        getChartData(selectedTimeFilter);
+
+        setInterval(function () {
+            getChartData(selectedTimeFilter)
+        }, 3000);
+
+        $("#btn-fetch-daily").click(function () {
+            selectedTimeFilter = 'd';
+        });
+
+        $("#btn-fetch-month").click(function () {
+            selectedTimeFilter = 'm';
+        });
+
+        $("#btn-fetch-year").click(function () {
+            selectedTimeFilter = 'y';
+        });
+
+    });
+
+
+    function getChartData(timeFilter) {
+
+        $("#loading").text("Loading..");
+
+        var apiName = timeFilter == 'd' ? 'dailyChartData' : timeFilter == 'm' ? 'monthChartData' : 'yearChartData';
+        selectedTimeFilter = timeFilter;
+
+        console.log("time filter:" + timeFilter);
+        var url = "/?handler=" + apiName;
+
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+                console.log(response);
+                $("#loading").text("");
+
+                new Chart("coinChart", {
+                    type: "line",
+                    data: {
+                        labels: response.xAxis,
+                        datasets: [{
+                            fill: false,
+                            lineTension: 0,
+                            backgroundColor: "rgba(0,0,255,1.0)",
+                            borderColor: "rgba(0,0,255,0.1)",
+                            data: response.yAxis
+                        }]
+                    },
+                    options: {
+                        legend: { display: false },
+                        scales: {
+                            yAxes: [{ ticks: { min: response.yMin, max: response.yMax } }],
+                        }
+                    }
+                });
+
+            },
+            error: function (response) {
+                console.log(response);
+            }
+        });
+
+    }
+</script>

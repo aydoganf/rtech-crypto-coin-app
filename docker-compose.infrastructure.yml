@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+
+  rtech_postgres:
+    image: postgres
+    container_name: rtech_postgres
+    restart: always
+    volumes:
+      - rtech_postgresdata:/var/lib/postgresql/data
+
+  rtech_pgadmin4:
+    image: dpage/pgadmin4
+    container_name: rtech_pgadmin4
+    restart: always
+    volumes:
+      - rtech_pgadmin4data:/var/lib/pgadmin
+
+volumes:
+  rtech_postgresdata:
+  rtech_pgadmin4data:
+
+networks:
+  rtech-network:
+    external: true

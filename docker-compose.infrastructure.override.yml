@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+  rtech_postgres:
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: myPassw0rd
+    ports:
+      - "5434:5432"
+
+  rtech_pgadmin4:
+    environment:
+      PGADMIN_DEFAULT_EMAIL: postgres@rtech.com.tr
+      PGADMIN_DEFAULT_PASSWORD: myPassw0rd
+    ports:
+      - "5050:80"

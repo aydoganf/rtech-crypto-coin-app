@@ -1,0 +1,35 @@
+﻿@page
+@model RTech.CryptoCoin.Web.Pages.Account.IndexModel
+@{
+}
+
+<div>
+    <h2>Hi, @User.Identity.Name</h2>
+</div>
+
+
+<div>Your Login History:</div>
+<div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>IP Address</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var login in Model.RTechUser.Logins)
+            {
+                <tr>
+                    <td>@login.IpAddress</td>
+                    <td>@login.CreationTime</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<div>
+    <a asp-page ="/Account/Logout">Logout</a>
+</div>
