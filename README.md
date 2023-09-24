@@ -4,7 +4,7 @@ Proje altyapımızı hazırlamak için proje dizininde aşaıdaki komutları ça
 
 `docker network create rtech-network`
 
-`docker-compose -f docker-compose.infrastructure.yml -f docker-compose.infrastructure.override.yml`
+`docker-compose -f docker-compose.infrastructure.yml -f docker-compose.infrastructure.override.yml -d`
 
 Daha sonra aşağıdaki komut ile web uygulaması dizinine geçilir.
 
